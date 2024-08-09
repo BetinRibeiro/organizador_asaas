@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processar e Renderizar Dados</title>
+    <h4>Quebra linha e | são os separadores, tratar no  bloco de notas</h4>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Processar e Renderizar Dados</h1>
+    <input type="file" id="fileInput" />
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Venda</th>
+                <th>Vendedor</th>
+                <th>Total Venda</th>
+                <th>Total Recebido</th>
+                <th>Total Pendente</th>
+                <th>Total Atrasado</th>
+                <th>Total Real</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Load the XLSX library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
